@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Martin</title>
+</head>
+<body>
+    <h1>Datos para Martin</h1>
+    <div class="wrap">
+        <div class="MediasInternasMartin">
+            <h2>Medidas internas de la caja:</h2>
+            <input type="number" placeholder="Largo" id="largoMartin">
+            <input type="number" placeholder="Ancho" id="anchoMartin">
+            <input type="number" placeholder="Alto" id="altoMartin">
+            <select id="canalesMartin">
+                <option value="canalB">Canal B</option>
+                <option value="canalC">Canal C</option>
+                <option value="canalEB">Canal EB</option>
+                <option value="canalBC">Canal BC</option>
+            </select>
+            <h3>Datos extras:</h3>
+            <form>
+                <input type="radio" name="MedidasExtra" id="TiraArrastreMartin">
+                <label for="TiraArrastreMartin">Tiras de arrastre</label>
+                <input type="radio" name="MedidasExtra" id="MasaPlanchaMartin">
+                <label for="MasaPlanchaMartin">Impresión con Masa</label>
+            </form>
+        </div>
+        <div class="TypeBox">
+            <h2>Tipos de caja</h2>
+            <form>
+                <input type="radio" name="typebox" value="m200" id="m200">
+                <label for="m200">Modelo B0</label>
+                <input type="radio" name="typebox" value="m203" id="m203">
+                <label for="m203">Modelo B3</label>
+            </form>
+                <input type="button" value="Calcular" onclick=CalcularDatosMartin();>            
+        </div>
+        <div>
+            <h2>Tipo de goma</h2>
+            <select id="Proveedor">
+                <option value="20">Euroflexo</option>
+                <option value="23">Diflex</option>
+                <option value="18">Globalflexo</option>
+            </select>
+            <select id="TipoDeIMpresión">
+                <option value="liquido">Liquido</option>
+                <option value="solido">Solido</option>
+                <option value="foam">Solido+Foam</option>
+            </select>
+            <input type="number"  id="numerodetintas" value="1">
+        </div>
+        <div id="aparecer" class="desaparecer">
+            <h2>Datos para Docupoint</h2>
+            <article>
+                <span id="errorMedidas"></span><br>
+                <b>fecha:</b><span id="elemento1"></span><br>
+                <b>medidas internas:</b><span id="elemento2"></span><br>
+                <b>total de placha:</b><span id="elemento3"></span><br>
+                <b>ruta:</b><span id="elemento4"></span><br>
+                <b>coste de troquel:</b><span id="elemento5"></span><br>
+                <b>numero de tintas:</b><span id="elemento6"></span><br>
+                <b>% de impresión:</b><span id="elemento7"></span><br>
+                <b>coste de cliche:</b><span id="elemento8"></span><br>
+            </article>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
