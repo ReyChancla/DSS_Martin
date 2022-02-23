@@ -103,7 +103,7 @@ function CalcularDatosMartin201() {
     const B1Cerrada = Tlargo + Tancho;
     const E = ancho/2;
     const F = Talto;
-
+    console.log(I);
         if (L >= 800 && L <= 2400) {
            
         } else{
@@ -122,9 +122,9 @@ function CalcularDatosMartin201() {
         //////////////////////////////////////////////////////
         if (I >= 300 && I <= 900) {
             
-        } else if (condition) {
-            
-        }{
+        } else if (I >= 901 && I <= 1000) {
+            document.getElementById("OpcionCurinioni").innerHTML = '<p><strong>Notas:</strong>  **Esta caja puede ser fabricada por Martin, pero con Sky Feed,<br>se recomienda fabricar en Curioni"**</p>'
+        }else {
             console.log("valor I incorrecto");
             document.getElementById("errorMedidas").innerHTML = ("Esta caja no se puede fabricar, por medidas.");
             document.getElementById("errorMedidas").style.background = "red";
